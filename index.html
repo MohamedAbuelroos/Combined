@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel File Upload & Download</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loadingSpinner" style="display: none;">
+        <div class="spinner"></div>
+      </div>
+      <h1 class="app-title">Start by uploading Some files</h1>
+      <label for="inputExcelFiles">Choose Excel Files</label>
+      <input type="file" id="inputExcelFiles" multiple accept=".xlsx,.xls" />
+      <button id="downloadBtn">Download Combined File</button>
+
+      <div id="output" class="table-container"></div>
+    </div>
+    <div class="footer">Created  By Dev.Mohamed Rabea</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
